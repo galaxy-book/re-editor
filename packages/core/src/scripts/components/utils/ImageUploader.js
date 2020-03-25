@@ -33,7 +33,7 @@ export default class ImageUploader extends React.Component {
   render() {
     return (
       <input
-        id="re-editor-image-input"
+        id="galaxy-editor-image-input"
         type="file"
         accept="image/*"
         onChange={this.handleFileUpload}

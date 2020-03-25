@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu, Dropdown, Button, Tooltip } from 'antd';
-import { command } from '@re-editor/core';
+import { command } from '@galaxy-editor/core';
 
 import Icon from '~/components/Icon';
 import Context from '~/components/Context';

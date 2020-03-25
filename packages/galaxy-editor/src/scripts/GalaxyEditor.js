@@ -1,8 +1,8 @@
 import React from 'react';
-import Editor, { utils } from '@re-editor/core';
-import Toolbar from '@re-editor/toolbar-antd';
+import Editor, { utils } from '@galaxy-editor/core';
+import Toolbar from '@galaxy-editor/toolbar-antd';
 
-export default class ReEditor extends React.Component {
+export default class GalaxyEditor extends React.Component {
   constructor(props) {
     super(props);
     this.editor = React.createRef();
@@ -16,6 +16,11 @@ export default class ReEditor extends React.Component {
     this.forceUpdate();
   }
 
+  handleBlur = () => {
+    const { onBlur } = this.props;
+    onBlur && onBlur();
+  };
+
   handleChange = value => {
     this.setState({
       value
@@ -28,7 +33,7 @@ export default class ReEditor extends React.Component {
     const { value } = this.state;
 
     return (
-      <div className="re-editor-container">
+      <div className="galaxy-editor-container">
         {this.editor.current && (
           <Toolbar
             value={value}
@@ -41,6 +46,7 @@ export default class ReEditor extends React.Component {
           placeholder={placeholder}
           ref={this.editor}
           value={value}
+          onBlur={this.handleBlur}
           onChange={this.handleChange}
           readOnly={readOnly}
           onImageUpload={onImageUpload}
@@ -49,7 +55,7 @@ export default class ReEditor extends React.Component {
     );
   }
 }
-ReEditor.defaultProps = {
+GalaxyEditor.defaultProps = {
   placeholder: '请输入内容',
   readOnly: false,
   tools: [

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@re-editor/core",
+  "name": "@galaxy-editor/core",
   "workspaces": [
     "packages/*"
   ],
@@ -25,15 +25,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wowlusitong/re-editor.git"
+    "url": "git+https://github.com/galaxy-book/galaxy-editor.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wowlusitong/re-editor/issues"
+    "url": "https://github.com/galaxy-book/galaxy-editor/issues"
   },
-  "homepage": "https://github.com/wowlusitong/re-editor#readme",
+  "homepage": "https://github.com/galaxy-book/galaxy-editor#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",

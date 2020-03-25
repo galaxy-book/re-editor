@@ -1,5 +1,5 @@
 {
-  "name": "@re-editor/core",
+  "name": "@galaxy-editor/core",
   "version": "0.5.8",
   "description": "",
   "main": "lib/scripts/index.js",

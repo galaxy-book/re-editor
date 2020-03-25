@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button as AntButton, Tooltip } from 'antd';
-import { command, utils } from '@re-editor/core';
+import { command, utils } from '@galaxy-editor/core';
 
 import Icon from '~/components/Icon';
 import Context from '~/components/Context';

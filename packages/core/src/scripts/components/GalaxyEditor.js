@@ -15,7 +15,7 @@ import command from '~/commands';
 import NodeWrapper from '~/components/wrappers/NodeWrapper';
 import DataContext from '~/components/contexts/Data';
 
-export default class ReEditor extends React.Component {
+export default class GalaxyEditor extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -24,6 +24,11 @@ export default class ReEditor extends React.Component {
     };
     this.editor = React.createRef();
   }
+
+  handleBlur = () => {
+    const { onBlur } = this.props;
+    onBlur && onBlur();
+  };
 
   handleChange = ({ value }) => {
     const { onChange } = this.props;
@@ -187,6 +192,7 @@ export default class ReEditor extends React.Component {
       >
         <Editor
           value={value}
+          onBlur={this.handleBlur}
           onChange={this.handleChange}
           renderMark={this.renderMark}
           renderNode={this.renderNode}
@@ -210,8 +216,8 @@ export default class ReEditor extends React.Component {
   }
 }
 
-ReEditor.defaultProps = {
-  className: 're-editor',
+GalaxyEditor.defaultProps = {
+  className: 'galaxy-editor',
   spellCheck: false,
   readOnly: false
 };

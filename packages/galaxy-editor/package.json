@@ -1,5 +1,5 @@
 {
-  "name": "re-editor",
+  "name": "galaxy-editor",
   "version": "0.5.8",
   "description": "",
   "main": "lib/scripts/index.js",
@@ -19,8 +19,8 @@
   "license": "ISC",
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.4.3",
-    "@re-editor/core": "0.5.8",
-    "@re-editor/toolbar-antd": "0.5.8"
+    "@galaxy-editor/core": "0.5.8",
+    "@galaxy-editor/toolbar-antd": "0.5.8"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

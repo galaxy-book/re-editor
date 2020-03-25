@@ -1,0 +1,9 @@
+@import '@galaxy-editor/core/lib/styles/index.css';
+@import '@galaxy-editor/toolbar-antd/lib/styles/index.css';
+
+.galaxy-editor-container {
+  .galaxy-editor {
+    min-height: 200px;
+    margin-top: 10px;
+  }
+}

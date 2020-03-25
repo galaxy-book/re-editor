@@ -1,24 +1,24 @@
 import React from 'react';
-import ReEditor from 're-editor';
+import GalaxyEditor from 'galaxy-editor';
 
 export default class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      value: JSON.parse(localStorage.getItem('re-editor-value'))
+      value: JSON.parse(localStorage.getItem('galaxy-editor-value'))
     };
   }
 
   handleChange = value => {
-    localStorage.setItem('re-editor-value', JSON.stringify(value.toJS()));
+    localStorage.setItem('galaxy-editor-value', JSON.stringify(value.toJS()));
   };
 
   render() {
     const { value } = this.state;
     return (
       <div className="container">
-        <h1>ReEditor</h1>
-        <ReEditor
+        <h1>GalaxyEditor</h1>
+        <GalaxyEditor
           value={value}
           onChange={this.handleChange}
           placeholder="请输入内容"

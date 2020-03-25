@@ -44,7 +44,8 @@ const commands = {
   ...list(),
   undo: editor => editor.undo(),
   redo: editor => editor.redo(),
-  'image-local': () => document.querySelector('#re-editor-image-input').click(),
+  'image-local': () =>
+    document.querySelector('#galaxy-editor-image-input').click(),
   image,
   table,
   code,

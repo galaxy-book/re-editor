@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Select, Tooltip } from 'antd';
-import { command, TablePicker } from '@re-editor/core';
+import { command, TablePicker } from '@galaxy-editor/core';
 
 import Button from '~/components/Button';
 import Icon from '~/components/Icon';

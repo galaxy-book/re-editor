@@ -5,7 +5,7 @@ import throttle from 'lodash/throttle';
 import { setData } from '~/utils/utils';
 import Icon from '~/components/utils/Icon';
 
-export default class ReImage extends React.Component {
+export default class GalaxyImage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
