@@ -42,7 +42,7 @@ export default class GalaxyEditor extends React.Component {
           />
         )}
         <Editor
-          autoFocus
+          autoFocus={true}
           placeholder={placeholder}
           ref={this.editor}
           value={value}
